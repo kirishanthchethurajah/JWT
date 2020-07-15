@@ -1,0 +1,59 @@
+server:
+  port: 9090
+
+
+#security:
+#  oauth2:
+#    client:
+#      #Github OAUTH2.0
+      registration:
+        github:
+          clientId: github-client-id
+          clientSecret: github-client-secret
+        google:
+          client-id: google-client-id
+          client-secret: google-client-secret
+        facebook:
+
+#      #Facebook OAUTH2.0
+#      clientId: fb-client-id
+#      clientSecret: fb-client-secret
+#      access-token-uri: https://graph.facebook.com/oauth/access_token
+#      user-authorization-uri: https://www.facebook.com/dialog/oauth
+#      token-name: oauth_token
+#      authentication-scheme: query
+#      client-authentication-scheme: form
+#    resource:
+#      user-info-uri: https://graph.facebook.com/me
+#
+
+
+
+spring:
+
+#  security:
+#    user:
+#      name: kira
+#      password: noIdea
+#      roles: ADMIN
+  #ldif -LDAP data interchange format
+#  ldap:
+#    embedded:
+#      port: 8389
+#      ldif: classpath:ldap-data.ldif
+#      base-dn: dc=springframework,dc=org
+
+  h2:
+    console:
+      enabled: true
+
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+
+#  datasource:
+#    url:
+#      jdbc:mysql://localhost:3306/springsecurity
+#    username: root
+#    password: test1234
+#
